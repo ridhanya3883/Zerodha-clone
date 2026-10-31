@@ -1,0 +1,292 @@
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #424242;
+  background-color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  border-bottom: 1px solid #eeeeee;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+/* Zerodha Logo */
+.logo {
+  width: 130px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #387ed1;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-image {
+  display: block;
+  width: 65%;
+  max-width: 850px;
+  height: auto;
+  margin: 0 auto 40px;
+}
+
+.hero h1 {
+  color: #424242;
+  font-size: 42px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.hero button {
+  background-color: #387ed1;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #222222;
+}
+
+/* About Section */
+.about {
+  padding: 60px 10%;
+  margin-top: 30px;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.about-content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666666;
+  text-align: left;
+  margin: 0 0 30px;
+}
+
+/* Products Section */
+.products {
+  padding: 60px 10%;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.products h2 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.products-description {
+  font-size: 17px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 35px 25px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.product-card h3 {
+  color: #387ed1;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.product-card p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.pricing-description {
+  font-size: 17px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.pricing-card {
+  padding: 35px 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.pricing-card h3 {
+  font-size: 32px;
+  color: #387ed1;
+  margin-bottom: 15px;
+}
+
+.pricing-card h4 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.pricing-card p {
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: #fafafa;
+  padding: 40px 10%;
+  text-align: center;
+  border-top: 1px solid #eeeeee;
+}
+
+.footer p {
+  color: #888888;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 95%;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .about {
+    padding: 40px 7%;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about h2,
+  .products h2,
+  .pricing h2 {
+    font-size: 26px;
+  }
+
+  .products {
+    padding: 40px 7%;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing {
+    padding: 40px 7%;
+  }
+
+  .pricing-container {
+    grid-template-columns: 1fr;
+  }
+}
