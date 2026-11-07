@@ -1,16 +1,21 @@
-# React + Vite
+# Zerodha Clone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is my Zerodha Clone project made with React and Vite. It recreates the frontend of the Zerodha website with sections such as the homepage, navigation bar, products, pricing, education and signup.
 
-Currently, two official plugins are available:
+## Running it
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Download or clone this repo.
+2. Open the project folder in VS Code.
+3. Run `npm install` (or `npm.cmd install` in PowerShell).
+4. Run `npm.cmd run dev`.
+5. Open the localhost URL displayed in the terminal, usually http://localhost:5173.
 
-## React Compiler
+## What I used
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Notes
+This is a frontend-only project that runs locally using the Vite development server. No separate backend or database setup is required.
